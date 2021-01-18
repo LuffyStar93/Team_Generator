@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+    font-size: 10px;
+    background-color: #333;
+}
+
+#header {
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 10em;
+    font-size: 42pt;
+    font-weight: bold;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    color: #FFF;
+    background-color: #00F;
+    border: 1px solid #000;
+}
+

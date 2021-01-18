@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="header">Team Generator</div>
+    <main>
+        <h2> Insérez le nom du joueur : </h2>
+        <input id="character" type="text"> 
+        <input type="button" onClick="addPlayer()" value="add">
+        <input type='button' onClick="clearAll()" value= "Clear Team">
+
+        <p>liste nom</p>
+        <textarea id="players_list" readonly></textarea>
+    </main>
 <script src="./script.js"></script>
 </body>
 </html>
