@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">Team Generator</div>
-    <main>
-        <h2> Insérez le nom du joueur : </h2>
-        <input id="character" type="text"> 
-        <input type="button" onClick="addPlayer()" value="add">
-        <input type='button' onClick="clearAll()" value= "Clear Team">
+    <header id="header">
+        <h1>Group Generator</h1>
+    </header>
+    <main class="mainSection">
+        <h2> Insérez un nom : </h2>
 
-        <p>liste nom</p>
+
+        <input placeholder="Ajouter un nom" id="character" type="text">
+        <input class="input-btn" type="button" onClick="addPlayer()" value="Ajouter">
+
+        <input class="input-btn" type='button' onClick="clearAll()" value="Tout supprimer">
+
+        <h3> liste des noms (refresh pour actualiser) :</h3>
+
         <textarea id="players_list" readonly></textarea>
+
+
+        <h3> Nombres de personnes par groupes :</h3>
+        <input id="nbrPerGroup" type="number" min="1" value="indiquer nbre de personne/groupe">
+
+
+        <input class="input-btn" type='button' onClick="groupDisplay()" id="createGroup" value="créer groupe !">
+
+
+        <div id="groups">
+
+        </div>
     </main>
 <script src="./script.js"></script>
 </body>
